@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		body{
+
+			background-color: #99A799;  
+
+	    	}
+		.form{
+
+			max-width: 50%;
+			background-color: #E4EFE7;
+			margin-left: 25%;
+			margin-top: 12%;
+			border-radius: 10px;
+			padding: 20px;
+			font-size: 20px;
+
+	    	}
+
+	 	 #button{
+
+	  		width: 70px;
+	  		height: 50px;
+	  		background-color: #32502E;
+	  		color: #E4EFE7;
+	  		font-weight: bold;
+
+	  			}
+
+	</style>
+	
+</head>
+<body>
+	<fieldset class="form">
+
+		<form action="form_handler.php" method="POST">
+
+		   <label>E-mail
+		   	<input type="email" name="email"  placeholder="Email" required="">
+		   </label>
+			
+		   <br>
+		   <br>
+
+		   <label>Password
+		    <input type="password" name="password"  placeholder="Password" required="">
+		   </label>
+		
+       
+       		<h3>Select your Gender </h3>
+
+		    <label>Male
+		     <input type="radio" name="gender" value="male" required="">
+		    </label>
+		
+		
+		   <label>Female
+		   	<input type="radio" name="gender" value="female" required="">
+		   </label>
+
+		
+	       <h3>chose your favorite color</h3>
+
+		   <label>
+		   	<input type="checkbox" name="color[]" value="Pink">
+		   	Pink
+		   </label>
+		
+	
+		   <label>
+		   	<input type="checkbox" name="color[]" value="Violet">
+		   	Violet
+		   </label>
+	
+		  <label>
+		  	<input type="checkbox" name="color[]" value="Magneta">
+		  	Magneta
+		  </label>
+		
+
+		<p>
+		   <input type="submit" name="login" class="input" value="Register" id="button">
+		</p>
+
+	  </form>
+   </fieldset>
+</body>
+</html>
